@@ -9,7 +9,7 @@ import { galleryImages } from "@/data/memories";
 export default function Gallery() {
   const [selected, setSelected] = useState(null);
 
-  // Match the love note popup: Escape closes the viewer, and the page behind
+  // Match the birthday popup: Escape closes the viewer, and the page behind
   // it should not scroll while it is open.
   useEffect(() => {
     if (!selected) return;
@@ -34,13 +34,13 @@ export default function Gallery() {
   };
 
   return (
-    <section id="gallery" className="bg-[#1c1318]/80 px-6 py-28">
+    <section id="gallery" className="bg-rose-50/70 px-6 py-28">
       <div className="mx-auto max-w-6xl">
         <div className="mb-14 text-center">
           <Heart className="mx-auto mb-5 fill-rose-400 text-rose-400" />
           <p className="text-sm tracking-[0.3em] text-rose-400 uppercase">Our Little Universe</p>
           <h2 className="font-romantic mt-4 text-4xl font-bold md:text-5xl">Captured Forever</h2>
-          <p className="mt-4 text-[#b7a0a7]">Every picture tells a little story.</p>
+          <p className="mt-4 text-[#927b83]">Every picture tells a little story.</p>
         </div>
 
         <div className="grid grid-cols-2 gap-5 md:grid-cols-4">
@@ -53,7 +53,7 @@ export default function Gallery() {
               viewport={{ once: true }}
               transition={{ delay: index * 0.08 }}
               onClick={() => setSelected(image)}
-              className={`group rounded-2xl bg-[#251b21] p-3 text-left shadow-md transition hover:-translate-y-2 hover:shadow-xl ${index % 2 === 0 ? "-rotate-2" : "rotate-2"}`}
+              className={`group rounded-2xl bg-white p-3 text-left shadow-md transition hover:-translate-y-2 hover:shadow-xl ${index % 2 === 0 ? "-rotate-2" : "rotate-2"}`}
             >
               <div className="relative aspect-[4/5] overflow-hidden rounded-xl bg-rose-100">
                 <Image src={image.src} alt={image.caption} fill sizes="(max-width: 768px) 45vw, 25vw" className="object-cover transition duration-500 group-hover:scale-110" />

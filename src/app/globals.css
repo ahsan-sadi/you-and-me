@@ -1,12 +1,11 @@
 @import "tailwindcss";
 
 :root {
-  /* Deep warm near-black so the whole site reads blackish, not pure black. */
-  --background: #161014;
-  --foreground: #f3e6e9;
+  --background: #fff8f7;
+  --foreground: #49343b;
   --primary: #e98a9d;
   --secondary: #f8dce2;
-  --muted: #b7a0a7;
+  --muted: #927b83;
 }
 
 * {
@@ -16,11 +15,7 @@
 
 body {
   margin: 0;
-  background:
-    radial-gradient(ellipse at 20% 0%, rgba(233, 138, 157, 0.09), transparent 55%),
-    radial-gradient(ellipse at 85% 90%, rgba(233, 138, 157, 0.07), transparent 50%),
-    var(--background);
-  background-attachment: fixed;
+  background: var(--background);
   color: var(--foreground);
   font-family: var(--font-poppins), sans-serif;
 }
@@ -30,8 +25,8 @@ body {
 }
 
 ::selection {
-  background: #7d4552;
-  color: #fff2f5;
+  background: #f2b7c4;
+  color: #49343b;
 }
 
 button,

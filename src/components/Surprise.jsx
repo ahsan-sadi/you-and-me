@@ -28,24 +28,24 @@ export default function Surprise() {
   return (
     <section
       id="surprise"
-      className="relative overflow-hidden bg-[#24161b] px-6 py-28 text-center"
+      className="relative overflow-hidden bg-[#f8dce2] px-6 py-28 text-center"
     >
-      <Sparkles className="absolute left-10 top-10 text-rose-400/70" size={45} />
-      <Heart className="absolute bottom-10 right-10 text-rose-400/70" size={45} />
+      <Sparkles className="absolute left-10 top-10 text-rose-300" size={45} />
+      <Heart className="absolute bottom-10 right-10 text-rose-300" size={45} />
       <div className="relative z-10 mx-auto max-w-2xl">
-        <Gift className="mx-auto mb-6 text-rose-400" size={42} />
-        <p className="text-sm tracking-[0.3em] text-rose-400 uppercase">
+        <Gift className="mx-auto mb-6 text-rose-500" size={42} />
+        <p className="text-sm tracking-[0.3em] text-rose-500 uppercase">
           A Little Surprise
         </p>
         <h2 className="font-romantic mt-5 text-4xl font-bold md:text-5xl">
           A Thousand Reasons
         </h2>
-        <p className="mt-5 text-[#b7a0a7]">
+        <p className="mt-5 text-[#927b83]">
           There are so many reasons why you are special. Here is one for you
           today.
         </p>
 
-        <div className="mx-auto mt-10 flex min-h-36 max-w-lg items-center justify-center rounded-3xl border border-white/10 bg-white/5 p-8 shadow-lg">
+        <div className="mx-auto mt-10 flex min-h-36 max-w-lg items-center justify-center rounded-3xl border border-white bg-white/70 p-8 shadow-lg">
           <AnimatePresence mode="wait">
             {message ? (
               <motion.p
@@ -53,12 +53,12 @@ export default function Surprise() {
                 initial={{ opacity: 0, scale: 0.8 }}
                 animate={{ opacity: 1, scale: 1 }}
                 exit={{ opacity: 0 }}
-                className="font-romantic text-2xl italic text-rose-300"
+                className="font-romantic text-2xl italic text-rose-500"
               >
                 {message}
               </motion.p>
             ) : (
-              <p className="font-romantic text-xl italic text-rose-400/80">
+              <p className="font-romantic text-xl italic text-rose-300">
                 Your surprise is waiting... ❤️
               </p>
             )}
@@ -68,7 +68,7 @@ export default function Surprise() {
         <button
           type="button"
           onClick={revealSurprise}
-          className="mt-9 inline-flex items-center gap-3 rounded-full bg-rose-500 px-8 py-4 text-white shadow-lg shadow-rose-900/50 transition hover:-translate-y-1 hover:bg-rose-600"
+          className="mt-9 inline-flex items-center gap-3 rounded-full bg-rose-500 px-8 py-4 text-white shadow-lg shadow-rose-200 transition hover:-translate-y-1 hover:bg-rose-600"
         >
           <Gift size={19} /> Reveal My Surprise
         </button>

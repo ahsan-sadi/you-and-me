@@ -2,7 +2,7 @@ import { Heart, Sparkles } from "lucide-react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#0d080a] px-6 py-12 text-center text-white">
+    <footer className="bg-[#49343b] px-6 py-12 text-center text-white">
       <Heart className="mx-auto mb-4 fill-rose-400 text-rose-400" />
       <h2 className="font-romantic text-3xl">Forever & Always</h2>
       <p className="mt-4 text-sm text-rose-100/70">Made with love, just for you.</p>

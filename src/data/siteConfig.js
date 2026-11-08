@@ -1,22 +1,27 @@
-// All personalization for the private gate and the opening love note lives here.
+// All personalization for the private gate and the birthday note lives here.
 // Edit this file to change the secret, the greeting name, or the message.
 
 // Secret gate: she must answer this question to enter the site.
 // Answers are matched case-insensitively, ignoring spaces and punctuation.
 export const gate = {
   question: "Who is my forever?",
-  answers: ["#Moitry#"],
+  answers: ["#shafrinChowdhuryEftee#"],
 };
 
-// The love note about our first meeting, shown in a popup after entering.
-export const loveNote = {
-  name: "Faria Ahmed Moitry",
-  headline: "About Us",
-  title: "The Day I Met You",
-  paragraphs: [
-    "I still remember the first time we met — like the world quietly paused so I could notice you. One ordinary moment, and somehow everything after it became ours.",
-    "From that first hello, a whole love began to grow: in the conversations that never wanted to end, in the laughter we kept saving for each other, and in the small silences that never felt empty.",
-    "Meeting you was the beginning I never knew I was waiting for. You turned a random day into my favorite memory, and a simple hello into forever.",
+// The birthday wish popup, shown after entering during her birthday window.
+export const birthday = {
+  name: "Shafrin Chowdhury Eftee",
+  headline: "Happy Birthday",
+  title: "Happy Birthday, My Love",
+  // Popup shows only while the date falls inside this window (month: 1-12):
+  // appears on Nov 8 and remains through the end of Nov 9.
+  window: { month: 11, startDay: 8, endDay: 9 },
+  // Set to true to preview the popup outside the window.
+  forceShow: false,
+  wishes: [
+    "Today the world celebrates the day it was blessed with you — and my heart celebrates every single day it was blessed with your love.",
+    "You are my favorite dream come true, my calm in the chaos, and the most beautiful chapter of my story. May this year love you as gently as you love everyone around you.",
+    "I wish you a lifetime of laugh wrinkles, eyes that sparkle with joy, and mornings that feel as soft as your hand in mine. Thank you for being exactly, perfectly you.",
   ],
-  signature: "Forever yours, from that very first day ❤️",
+  signature: "Forever and always yours ❤️",
 };

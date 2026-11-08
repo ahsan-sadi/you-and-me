@@ -35,7 +35,7 @@ export const memories = [
 
 export const galleryImages = [
   { id: 1, src: "/images/memory_2.jpeg", caption: "A beautiful memory" },
-  { id: 2, src: "/images/memory_1.jpeg", caption: "A moment to remember" },
-  { id: 3, src: "/images/memory_3.jpeg", caption: "My favorite smile" },
-  { id: 4, src: "/images/memory_4.jpeg", caption: "Forever in my heart" },
+  { id: 2, src: "/images/memory_3.jpeg", caption: "A moment to remember" },
+  { id: 3, src: "/images/memory_4.jpg", caption: "My favorite smile" },
+  { id: 4, src: "/images/memory_1.jpeg", caption: "Forever in my heart" },
 ];

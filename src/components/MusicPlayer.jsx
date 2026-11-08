@@ -51,7 +51,7 @@ export default function MusicPlayer() {
         type="button"
         onClick={toggleMusic}
         aria-label={playing ? "Pause music" : "Play music"}
-        className="fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full border border-white/15 bg-[#241a1f] px-5 py-4 text-rose-300 shadow-xl transition hover:scale-105"
+        className="fixed bottom-5 right-5 z-50 flex items-center gap-3 rounded-full border border-rose-200 bg-white px-5 py-4 text-rose-500 shadow-xl transition hover:scale-105"
       >
         {playing ? <Pause size={18} /> : <Play size={18} />}
         <Music2 size={18} className={playing ? "animate-bounce" : ""} />
