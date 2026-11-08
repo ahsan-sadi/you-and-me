@@ -14,11 +14,11 @@ const poppins = Poppins({
 
 // Absolute origin for link previews (og:image must be a full URL).
 // On Vercel this resolves to the production domain automatically; locally it
-// falls back to the default *.vercel.app name — update it if you rename the
-// project or add a custom domain.
+// falls back to the deployed domain — update it if you rename the project or
+// add a custom domain.
 const siteUrl = process.env.VERCEL_PROJECT_PRODUCTION_URL
   ? `https://${process.env.VERCEL_PROJECT_PRODUCTION_URL}`
-  : "https://forever-us.vercel.app";
+  : "https://forever-us-dusky.vercel.app";
 
 export const metadata = {
   metadataBase: new URL(siteUrl),
