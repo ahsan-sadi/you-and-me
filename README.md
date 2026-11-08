@@ -35,18 +35,17 @@ Verification order is `npm run lint` → `npm run build` (there is no separate t
 
 ## Deploy to Vercel
 
-No config file is needed — Vercel auto-detects the Next.js framework and runs `npm run build`.
+No config file is needed — Vercel auto-detects the Next.js framework and runs `npm run build`. No Git host is involved; this repo has no remote configured.
 
-1. Push the repo to GitHub (the local `main` branch may be ahead of `origin/main`; push before importing so Vercel builds the current code):
+1. Deploy straight from this folder with the Vercel CLI (or drag-and-drop the folder at [vercel.com/new](https://vercel.com/new)):
 
    ```bash
-   git add -A
-   git commit -m "Prepare for deploy"
-   git push origin main
+   npm i -g vercel
+   vercel
    ```
 
-2. Go to [vercel.com/new](https://vercel.com/new), import the repository, and keep the defaults (Framework Preset: **Next.js**, no build output configuration).
-3. Deploy. The two routes are `/` (gated home) and `/welcome` (secret-answer login).
+2. Keep the defaults (Framework Preset: **Next.js**, no build output configuration).
+3. The two routes are `/` (gated home) and `/welcome` (secret-answer login).
 4. For a custom domain: Project → Settings → Domains.
 
 Notes:
@@ -65,4 +64,5 @@ Notes:
 # sadi-moitry-forever
 # sadi-moitry-forever
 # forever-together
+# you-and-me
 # you-and-me
